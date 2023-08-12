@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Tesla Configurator</title>
+    <link rel="stylesheet" href="assets/css/tesla.css" />
+    <link rel="shortcut icon" href="assets/img/logo3.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="header" id="header">
+      <nav>
+        <img src="assets/img/Tesla-Logo-No-Background.png" class="logo" />
+        <ul>
+          <li><a href="#" id="models">Model S</a></li>
+          <li><a href="#" id="model3">Model 3</a></li>
+          <li><a href="#" id="modelx">Model X</a></li>
+          <li><a href="#" id="modely">Model Y</a></li>
+        </ul>
+        <a href="#" class="btn" id="btn">Configure Now</a>
+      </nav>
+      <div class="info">
+        <div>
+          <h2 id="ac">
+            Tesla is here to stay and keep fighting for the electric car
+            revolution.
+          </h2>
+          <p id="acp">-Elon Musk</p>
+        </div>
+        <div>
+          <h2 id="sp"></h2>
+          <p id="spp"></p>
+        </div>
+        <div>
+          <h2 id="mr"></h2>
+          <p id="mrp"></p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <h2 id="model"></h2>
+        </div>
+      </div>
+    </div>
+    <script>
+      var header = document.getElementById("header");
+      var ms = document.getElementById("models");
+      var m3 = document.getElementById("model3");
+      var mx = document.getElementById("modelx");
+      var my = document.getElementById("modely");
+      var cn = document.getElementById("btn");
+      var model = document.getElementById("model");
+      var ac = document.getElementById("ac");
+      var sp = document.getElementById("sp");
+      var mr = document.getElementById("mr");
+      var acp = document.getElementById("acp");
+      var spp = document.getElementById("spp");
+      var mrp = document.getElementById("mrp");
+      ms.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://images6.alphacoders.com/115/1154171.jpg)";
+        model.innerHTML = "Model S";
+        ac.innerHTML = "1.9s";
+        sp.innerHTML = "200mph";
+        mr.innerHTML = "405mi";
+        acp.innerHTML = "0-60mph";
+        spp.innerHTML = "Top Speed";
+        mrp.innerHTML = "Max Range";
+      };
+      m3.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://w0.peakpx.com/wallpaper/421/311/HD-wallpaper-2018-tesla-model-3-electric-sedan-car.jpg)";
+        model.innerHTML = "Model 3";
+        ac.innerHTML = "3.1s";
+        sp.innerHTML = "145mph";
+        mr.innerHTML = "315mi";
+        acp.innerHTML = "0-60mph";
+        spp.innerHTML = "Top Speed";
+        mrp.innerHTML = "Max Range";
+      };
+      mx.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://images5.alphacoders.com/121/1210652.jpg)";
+        model.innerHTML = "Model X";
+        ac.innerHTML = "2.5s";
+        sp.innerHTML = "155.3mph";
+        mr.innerHTML = "333mi";
+        acp.innerHTML = "0-60mph";
+        spp.innerHTML = "Top Speed";
+        mrp.innerHTML = "Max Range";
+      };
+      my.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_674,q_auto:eco,w_1200/v1/cms/uploads/jvxva1icd0f75luru6te)";
+        model.innerHTML = "Model Y";
+        ac.innerHTML = "3.5s";
+        sp.innerHTML = "155mph";
+        mr.innerHTML = "330mi";
+        acp.innerHTML = "0-60mph";
+        spp.innerHTML = "Top Speed";
+        mrp.innerHTML = "Max Range";
+      };
+      cn.onclick = function () {
+        header.style.backgroundImage =
+          "url(https://thereviewstories.com/wp-content/uploads/2023/07/Tesla-sexy.jpg)";
+        ac.innerHTML =
+          "Tesla is here to stay and keep fighting for the electric car revolution.";
+        model.innerHTML = "";
+        sp.innerHTML = "";
+        mr.innerHTML = "";
+        acp.innerHTML = "-Elon Musk";
+        spp.innerHTML = "";
+        mrp.innerHTML = "";
+      };
+    </script>
+  </body>
+</html>
